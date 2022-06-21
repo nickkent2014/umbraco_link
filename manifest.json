@@ -1,19 +1,25 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "umbraco_link",
+    "permissions": ["storage", "activeTab", "scripting"],
+    
     "description": "adds umbraco links to barnsley.gov.uk webpages",
     "version": "1.0",
     "icons": {
-        "16": "",
-        "48": "",
-        "128": ""
+        "16": "/images/icon16.png",
+        "48": "/images/icon48.png",
+        "128": "/images/icon128.png"
     },
     "page_action": {
         "default_icon": {
-            "16": "",
-            "48": "",
-            "128": ""
+            "16": "/images/icon16.png",
+            "48": "/images/icon48.png",
+            "128": "/images/icon128.png"
         }
     },
-    "content_scripts": [{}]
+    "content_scripts": [{
+        "matches": ["https://www.barnsley.gov.uk/*"],
+        "css": ["main.css"],
+        "js": ["umbraco_button.js"]
+    }]
 }

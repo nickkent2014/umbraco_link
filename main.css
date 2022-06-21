@@ -1,0 +1,19 @@
+.button--search {
+    background-color: red !important;
+}
+
+.umbraco-button {
+    height: 30px;
+    width: 150px;
+    padding: 5px;
+    /* outline: none; */
+    margin: 10px;
+    /* border: none; */
+    cursor: pointer;
+    background-color: springgreen;
+    /* position: fixed;
+    left: 0px;
+    top: 0px; */
+    border-radius: 5px;
+    padding-bottom: 8px;
+  }
