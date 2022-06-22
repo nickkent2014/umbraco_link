@@ -9792,14 +9792,17 @@ umbraco_button.setAttribute("href", `https://barnsleygovuk.azurewebsites.net/umb
 // umbraco_button.setAttribute("src", "www.google.com")
 // umbraco_button.style.color = "white"
 umbraco_button.style.margin = "4px"
+
 umbraco_button.style.textDecoration = "none"
 console.log(window.location.href)
 
 if (found = false) {
-    umbraco_button.style.color = "red"
+    umbraco_button.style.color = "green"
 } else {
     umbraco_button.style.color = "white"
 }
 
 
 document.querySelector("div.masthead").appendChild(umbraco_button)
+
+// "storage", "activeTab", 
