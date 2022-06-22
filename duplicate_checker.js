@@ -1,3 +1,4 @@
+// This script checks for redirects as well as duplicate public notices
 
 let urls = [
     {
@@ -57,26 +58,6 @@ let urls = [
         "umbraco_id": 1249
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/permits-for-household-waste-recycling-centre/",
-        "umbraco_id": 1251
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/get-help-to-put-your-bins-out/",
-        "umbraco_id": 1252
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/get-an-extra-grey-bin/",
-        "umbraco_id": 1256
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/ask-us-to-collect-large-unwanted-items/",
-        "umbraco_id": 1257
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/order-a-bin/",
-        "umbraco_id": 1258
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/advice-benefits-and-council-tax/",
         "umbraco_id": 1260
     },
@@ -87,18 +68,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/recycling-banks/",
         "umbraco_id": 1265
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/abandoned-bins/",
-        "umbraco_id": 1267
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/report-a-missed-bin/",
-        "umbraco_id": 1271
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/report-a-spilled-bin/",
-        "umbraco_id": 1272
     },
     {
         "url": "https://www.barnsley.gov.uk/services/planning-and-buildings/",
@@ -119,178 +88,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/find-your-nearest/",
         "umbraco_id": 1284
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/adult-social-care/getting-help-early/equipment-and-adaptations/",
-        "umbraco_id": 1329
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/school-travel/zero-fare-pass-for-travel-to-school/",
-        "umbraco_id": 1330
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/licensing/taxi-licences/",
-        "umbraco_id": 1335
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/adult-skills-and-community-learning/",
-        "umbraco_id": 1360
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/conservation/listed-buildings/",
-        "umbraco_id": 1366
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/consumer-protection/product-safety/",
-        "umbraco_id": 1367
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/animal-welfare-and-licences/report-an-animal-welfare-concern/",
-        "umbraco_id": 1368
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/consumer-protection/consumer-advice-and-trading-standards/",
-        "umbraco_id": 1369
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/road-licences/street-displays-and-advertising-boards/",
-        "umbraco_id": 1372
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/animal-welfare-and-licences/report-a-stray-lost-or-dangerous-dog/",
-        "umbraco_id": 1373
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/pollution/report-a-nuisance/report-a-noise-problem/",
-        "umbraco_id": 1374
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/pollution/report-a-nuisance/report-construction-pollution/",
-        "umbraco_id": 1375
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/pollution/report-a-nuisance/report-contaminated-land/",
-        "umbraco_id": 1376
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/animal-welfare-and-licences/animal-feed-and-fertiliser-regulations/",
-        "umbraco_id": 1380
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/streetcare-and-cleaning/dog-fouling/",
-        "umbraco_id": 1381
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/streetcare-and-cleaning/graffiti/",
-        "umbraco_id": 1382
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/drainage-and-flooding/report-a-problem-with-a-drain-or-gully/",
-        "umbraco_id": 1383
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/streetcare-and-cleaning/dog-waste-bins/",
-        "umbraco_id": 1384
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/streetcare-and-cleaning/litter/",
-        "umbraco_id": 1385
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/business-information/food-businesses/food-labelling-and-regulations/",
-        "umbraco_id": 1387
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/housing/report-a-private-property-causing-public-health-problems/",
-        "umbraco_id": 1388
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/roadworks-and-road-maintenance/report-a-damaged-bridge/",
-        "umbraco_id": 1389
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/road-safety/report-a-pavement-or-road-obstruction/",
-        "umbraco_id": 1390
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/street-lights-bollards-and-furniture/report-damaged-street-furniture/",
-        "umbraco_id": 1394
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/waste-carriers-licences/",
-        "umbraco_id": 1397
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/roadworks-and-road-maintenance/report-damage-to-a-retaining-wall/",
-        "umbraco_id": 1398
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/report-a-build-up-of-rubbish-at-a-property/",
-        "umbraco_id": 1400
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/streetcare-and-cleaning/public-toilets/",
-        "umbraco_id": 1401
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/street-lights-bollards-and-furniture/street-lights-and-illuminated-bollards/",
-        "umbraco_id": 1402
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/roadworks-and-road-maintenance/report-a-pothole/",
-        "umbraco_id": 1403
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/abandoned-vehicles/",
-        "umbraco_id": 1404
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/roadworks-and-road-maintenance/report-a-problem-with-roadworks-closures-and-diversions/",
-        "umbraco_id": 1405
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/licensing/fly-posting/",
-        "umbraco_id": 1407
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/road-safety/road-safety-schemes/",
-        "umbraco_id": 1408
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/streetcare-and-cleaning/dead-animals/",
-        "umbraco_id": 1409
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/fly-tipping/",
-        "umbraco_id": 1410
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/roadworks-and-road-maintenance/report-a-damaged-pavement/",
-        "umbraco_id": 1411
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/road-safety/pedestrian-crossings/",
-        "umbraco_id": 1413
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/streetcare-and-cleaning/road-spillages-and-debris/",
-        "umbraco_id": 1415
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/traffic-lights-road-signs-and-markings/road-signs-and-markings/",
-        "umbraco_id": 1417
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/street-lights-bollards-and-furniture/report-damaged-street-furniture/",
-        "umbraco_id": 1419
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/road-safety/road-safety-schemes/",
-        "umbraco_id": 1421
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/business-information/food-businesses/food-hygiene-and-safety/food-hygiene-regulations/",
-        "umbraco_id": 1422
     },
     {
         "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/",
@@ -429,70 +226,6 @@ let urls = [
         "umbraco_id": 1548
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/advice-benefits-and-council-tax/council-tax/council-tax-support/council-tax-support-reviews/",
-        "umbraco_id": 1551
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/advice-benefits-and-council-tax/council-tax/council-tax-support/backdated-benefit/",
-        "umbraco_id": 1552
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/advice-benefits-and-council-tax/housing-benefit/housing-benefit-appeals/",
-        "umbraco_id": 1553
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/have-your-say/complaints-and-compliments/",
-        "umbraco_id": 1562
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/jobs/",
-        "umbraco_id": 1564
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/adult-skills-and-community-learning/",
-        "umbraco_id": 1565
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/childcare-nurseries-and-family-support/school-nursery-places/",
-        "umbraco_id": 1566
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/school-admissions-and-transfers/primary-school-places/",
-        "umbraco_id": 1567
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/school-admissions-and-transfers/secondary-school-places/",
-        "umbraco_id": 1568
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/school-admissions-and-transfers/transferring-schools/",
-        "umbraco_id": 1569
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/adult-social-care/how-we-can-help-with-your-care-needs/get-a-social-care-assessment/",
-        "umbraco_id": 1574
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/planning-and-buildings/home-improvements-and-building-work/find-out-if-you-need-planning-permission/",
-        "umbraco_id": 1575
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/roadworks-and-road-maintenance/roadworks/",
-        "umbraco_id": 1577
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/",
-        "umbraco_id": 1578
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/drainage-and-flooding/report-flooding/",
-        "umbraco_id": 1581
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/childrens-social-care/worried-about-a-child/",
-        "umbraco_id": 1592
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/safeguarding-families-in-barnsley/safeguarding-adults-in-barnsley/",
         "umbraco_id": 1593
     },
@@ -503,10 +236,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/advice-benefits-and-council-tax/how-to-use-our-online-forms/",
         "umbraco_id": 1606
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/parking/parking-fines-and-enforcement/",
-        "umbraco_id": 1614
     },
     {
         "url": "https://www.barnsley.gov.uk/have-your-say/complaints-and-compliments/",
@@ -527,14 +256,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/council-offices/",
         "umbraco_id": 2656
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/have-your-say/",
-        "umbraco_id": 2657
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/planning-and-buildings/building-control/get-permission-to-demolish-a-building/",
-        "umbraco_id": 3856
     },
     {
         "url": "https://www.barnsley.gov.uk/services/business-information/",
@@ -569,20 +290,12 @@ let urls = [
         "umbraco_id": 4314
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/our-council/information-we-publish/constitution/",
-        "umbraco_id": 4320
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/information-and-privacy/",
         "umbraco_id": 4351
     },
     {
         "url": "https://www.barnsley.gov.uk/services/information-and-privacy/your-privacy/",
         "umbraco_id": 4352
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/planning-policy/",
-        "umbraco_id": 4354
     },
     {
         "url": "https://www.barnsley.gov.uk/services/information-and-privacy/what-we-do-with-your-personal-information/",
@@ -613,10 +326,6 @@ let urls = [
         "umbraco_id": 4366
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/love-barnsley/visit-barnsley/",
-        "umbraco_id": 4372
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/information-and-privacy/cctv/",
         "umbraco_id": 4377
     },
@@ -629,24 +338,8 @@ let urls = [
         "umbraco_id": 10113
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/community-safety-and-crime/hate-and-harassment/",
-        "umbraco_id": 10140
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/road-licences/street-displays-and-advertising-boards/",
-        "umbraco_id": 10141
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/parking/report-obstructive-parking/",
-        "umbraco_id": 10142
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/clinical-waste/",
         "umbraco_id": 10163
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/discarded-needles-and-syringes/",
-        "umbraco_id": 10196
     },
     {
         "url": "https://www.barnsley.gov.uk/services/community-and-volunteering/love-where-you-live/",
@@ -1033,10 +726,6 @@ let urls = [
         "umbraco_id": 12620
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/births-deaths-and-marriages/deaths-and-funerals/what-to-do-after-someone-dies/",
-        "umbraco_id": 12626
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/births-deaths-and-marriages/deaths-and-funerals/burials-cremations-and-memorials-pricelist/",
         "umbraco_id": 12639
     },
@@ -1285,10 +974,6 @@ let urls = [
         "umbraco_id": 13241
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/parking/blue-badges/",
-        "umbraco_id": 13349
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/community-safety-and-crime/barnsley-safe-places/",
         "umbraco_id": 13400
     },
@@ -1333,24 +1018,8 @@ let urls = [
         "umbraco_id": 13597
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/planning-policy/",
-        "umbraco_id": 13652
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/planning-and-buildings/commercial-and-housing-developments/section-106-agreements/",
-        "umbraco_id": 13653
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/planning-and-buildings/pre-application-advice-for-historic-buildings-and-places/",
-        "umbraco_id": 13654
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/health-and-wellbeing/our-reports/barnsley-public-health-strategy/",
         "umbraco_id": 13671
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/planning-and-buildings/home-improvements-and-building-work/pre-application-advice-for-homeowners/",
-        "umbraco_id": 13737
     },
     {
         "url": "https://www.barnsley.gov.uk/services/adult-skills-and-community-learning/",
@@ -1519,34 +1188,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/parking/car-parks-and-on-street-parking/",
         "umbraco_id": 14187
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/school-attendance-and-absence/",
-        "umbraco_id": 14223
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/children-missing-education/",
-        "umbraco_id": 14224
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/chaperones/",
-        "umbraco_id": 14225
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/educating-your-child-at-home/",
-        "umbraco_id": 14226
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/children-in-entertainment/",
-        "umbraco_id": 14227
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/child-employment/",
-        "umbraco_id": 14230
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/planning-and-buildings/commercial-and-housing-developments/pre-application-advice-for-developments/",
-        "umbraco_id": 14261
     },
     {
         "url": "https://www.barnsley.gov.uk/services/adult-social-care/disabilities-and-sensory-impairments/independent-travel-training/",
@@ -1767,10 +1408,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/our-council/assets-of-community-value-and-right-to-bid/",
         "umbraco_id": 14732
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/land-and-property/land-and-property-searches/local-authority-searches/",
-        "umbraco_id": 14736
     },
     {
         "url": "https://www.barnsley.gov.uk/barnsley-maps/public-rights-of-way/",
@@ -2001,10 +1638,6 @@ let urls = [
         "umbraco_id": 15372
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/love-barnsley/visit-barnsley/",
-        "umbraco_id": 15373
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/childcare-nurseries-and-family-support/school-nursery-places/",
         "umbraco_id": 15409
     },
@@ -2101,20 +1734,12 @@ let urls = [
         "umbraco_id": 15500
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/adult-social-care/help-with-your-mental-health/mental-health-services/",
-        "umbraco_id": 15570
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/parks-and-open-spaces/public-footpaths-and-rights-of-way/statutory-registers/",
         "umbraco_id": 15595
     },
     {
         "url": "https://www.barnsley.gov.uk/services/voting-and-elections/recent-elections/",
         "umbraco_id": 15598
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/planning-and-buildings/building-control/get-permission-to-demolish-a-building/",
-        "umbraco_id": 15605
     },
     {
         "url": "https://www.barnsley.gov.uk/services/planning-and-buildings/building-control/",
@@ -2195,10 +1820,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/ask-for-a-new-bin-collection/",
         "umbraco_id": 15685
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/get-an-extra-grey-bin/",
-        "umbraco_id": 15694
     },
     {
         "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/fly-tipping/",
@@ -2283,10 +1904,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/streetcare-and-cleaning/public-toilets/",
         "umbraco_id": 15850
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/streetcare-and-cleaning/road-spillages-and-debris/",
-        "umbraco_id": 15853
     },
     {
         "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/report-a-build-up-of-rubbish-at-a-property/",
@@ -2445,10 +2062,6 @@ let urls = [
         "umbraco_id": 16285
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/accessibility/free-digital-support-sessions/",
-        "umbraco_id": 16287
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/our-council/our-management-team/",
         "umbraco_id": 16308
     },
@@ -2459,10 +2072,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/adult-skills-and-community-learning/maths/",
         "umbraco_id": 16372
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/adult-skills-and-community-learning/",
-        "umbraco_id": 16375
     },
     {
         "url": "https://www.barnsley.gov.uk/services/adult-skills-and-community-learning/it-and-digital-skills/",
@@ -3497,14 +3106,6 @@ let urls = [
         "umbraco_id": 18533
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/ways-to-pay/",
-        "umbraco_id": 18534
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/finding-it-difficult-to-pay/",
-        "umbraco_id": 18535
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/health-and-wellbeing/protecting-your-health/health-checks/",
         "umbraco_id": 18541
     },
@@ -3523,10 +3124,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/health-and-wellbeing/healthy-living/sexual-health/",
         "umbraco_id": 18561
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/our-council/research-data-and-statistics/",
-        "umbraco_id": 18577
     },
     {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/education-for-children-who-cant-attend-school-because-of-health-needs/",
@@ -3821,16 +3418,8 @@ let urls = [
         "umbraco_id": 21030
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/childrens-social-care/assessments/",
-        "umbraco_id": 21032
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/safeguarding-families-in-barnsley/safeguarding-children-in-barnsley/for-professionals/child-death-review-process/",
         "umbraco_id": 21033
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/childrens-social-care/investigating-allegations-of-neglect-or-abuse/",
-        "umbraco_id": 21035
     },
     {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/safeguarding-families-in-barnsley/safeguarding-adults-in-barnsley/barnsley-safeguarding-adults-board/strategic-plan/",
@@ -3855,10 +3444,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/safeguarding-families-in-barnsley/safeguarding-adults-in-barnsley/barnsley-safeguarding-adults-board/safeguarding-adult-reviews-sars/",
         "umbraco_id": 21050
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/childrens-social-care/court-orders/",
-        "umbraco_id": 21053
     },
     {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/safeguarding-families-in-barnsley/safeguarding-adults-in-barnsley/barnsley-safeguarding-adults-board/safeguarding-adults-annual-report/",
@@ -3965,10 +3550,6 @@ let urls = [
         "umbraco_id": 21495
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/lieutenancy-of-south-yorkshire/",
-        "umbraco_id": 21496
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/lieutenancy-of-south-yorkshire/uniform-and-badges/",
         "umbraco_id": 21497
     },
@@ -4041,10 +3622,6 @@ let urls = [
         "umbraco_id": 21611
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/accessibility/",
-        "umbraco_id": 21612
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/voting-and-elections/community-governance-review/",
         "umbraco_id": 21649
     },
@@ -4055,14 +3632,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/insurance-claims/",
         "umbraco_id": 21791
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/insurance-claims/",
-        "umbraco_id": 21922
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/road-licences/licences-for-building-materials/",
-        "umbraco_id": 22008
     },
     {
         "url": "https://www.barnsley.gov.uk/services/accessibility/bsl-videos/",
@@ -4093,10 +3662,6 @@ let urls = [
         "umbraco_id": 22212
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/road-licences/",
-        "umbraco_id": 22240
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/business-rates/requests-for-information-about-business-rates/foi-extracts-from-october-2017/",
         "umbraco_id": 22466
     },
@@ -4105,10 +3670,6 @@ let urls = [
         "umbraco_id": 22902
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/barnsley-virtual-school/",
-        "umbraco_id": 22946
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/barnsley-virtual-school/personal-education-plans-peps/",
         "umbraco_id": 22948
     },
@@ -4133,40 +3694,8 @@ let urls = [
         "umbraco_id": 22954
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/something-to-shout-about-lets-celebrate/",
-        "umbraco_id": 22955
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/barnsley-virtual-school/children-in-care-stuff-for-you/",
-        "umbraco_id": 22956
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/barnsley-virtual-school/",
         "umbraco_id": 22946
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/barnsley-virtual-school/personal-education-plans-peps/",
-        "umbraco_id": 22948
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/barnsley-virtual-school/our-virtual-school/",
-        "umbraco_id": 22950
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/barnsley-virtual-school/designated-teachers/",
-        "umbraco_id": 22951
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/barnsley-virtual-school/newsroom/",
-        "umbraco_id": 22952
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/barnsley-virtual-school/foster-carers/",
-        "umbraco_id": 22953
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/barnsley-virtual-school/social-workers/",
-        "umbraco_id": 22954
     },
     {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/something-to-shout-about-lets-celebrate/",
@@ -4593,10 +4122,6 @@ let urls = [
         "umbraco_id": 24731
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-with-special-educational-needs-and-disabilities-send/special-educational-needs-assessment/",
-        "umbraco_id": 24732
-    },
-    {
         "url": "https://www.barnsley.gov.uk/statements/09052018-safer-neighbourhood-service-support-partners/",
         "umbraco_id": 24739
     },
@@ -4619,10 +4144,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/education-inclusion-services/events/",
         "umbraco_id": 24838
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/barnsley-educational-child-and-community-psychology-service/",
-        "umbraco_id": 24845
     },
     {
         "url": "https://www.barnsley.gov.uk/services/information-and-privacy/paying-for-services/",
@@ -4659,10 +4180,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/childcare-nurseries-and-family-support/early-years-and-childcare-professionals/useful-information-and-documents/",
         "umbraco_id": 25016
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/safeguarding-families-in-barnsley/safeguarding-children-in-barnsley/for-professionals/",
-        "umbraco_id": 25017
     },
     {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/childcare-nurseries-and-family-support/early-years-and-childcare-professionals/health-and-safety/",
@@ -4749,10 +4266,6 @@ let urls = [
         "umbraco_id": 25140
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/childcare-nurseries-and-family-support/early-years-and-childcare-professionals/childcare-business-support/market-research/",
-        "umbraco_id": 25157
-    },
-    {
         "url": "https://www.barnsley.gov.uk/statements/07062018-cundy-cross-roadworks/",
         "umbraco_id": 25158
     },
@@ -4837,10 +4350,6 @@ let urls = [
         "umbraco_id": 25800
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/regeneration/key-projects/",
-        "umbraco_id": 25800
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/love-barnsley/town-centre/",
         "umbraco_id": 25805
     },
@@ -4857,10 +4366,6 @@ let urls = [
         "umbraco_id": 25824
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/love-barnsley/town-centre/the-glass-works/",
-        "umbraco_id": 25830
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/planning-and-buildings/local-planning-and-development/neighbourhood-planning/oxspring-neighbourhood-development-plan/",
         "umbraco_id": 25839
     },
@@ -4871,10 +4376,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/jobs/frequently-asked-questions-about-jobs-with-us/",
         "umbraco_id": 25900
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/education-inclusion-services/",
-        "umbraco_id": 25924
     },
     {
         "url": "https://www.barnsley.gov.uk/statements/3172018-bella-vista-farm/",
@@ -4929,24 +4430,12 @@ let urls = [
         "umbraco_id": 26062
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/adult-skills-and-community-learning/statutory-courses-for-business/",
-        "umbraco_id": 26063
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/adult-skills-and-community-learning/statutory-courses-for-business/",
-        "umbraco_id": 26065
-    },
-    {
         "url": "https://www.barnsley.gov.uk/statements/16082018-market-kitchen/",
         "umbraco_id": 26088
     },
     {
         "url": "https://www.barnsley.gov.uk/statements/16082018-cctv-in-taxis/",
         "umbraco_id": 26090
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/births-deaths-and-marriages/deaths-and-funerals/pet-crematorium/",
-        "umbraco_id": 26091
     },
     {
         "url": "https://www.barnsley.gov.uk/services/our-council/our-performance/how-we-measure-our-performance/",
@@ -5023,10 +4512,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/statements/04102018-complaints-about-empty-properties-in-grimethorpe/",
         "umbraco_id": 26535
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/barnsley-homeless-alliance/",
-        "umbraco_id": 26567
     },
     {
         "url": "https://www.barnsley.gov.uk/statements/11102018-market-kitchen/",
@@ -5189,10 +4674,6 @@ let urls = [
         "umbraco_id": 27384
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/early-help-for-families/",
-        "umbraco_id": 27413
-    },
-    {
         "url": "https://www.barnsley.gov.uk/statements/28012019-centre-for-cities-report/",
         "umbraco_id": 27415
     },
@@ -5239,10 +4720,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/statements/06022019-m1-junction-36-economic-growth-corridor-goldthorpe-phase-2/",
         "umbraco_id": 27526
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/tell-us-about-it/",
-        "umbraco_id": 27531
     },
     {
         "url": "https://www.barnsley.gov.uk/statements/11022019-fly-tippers-caught-on-cctv-01022019/",
@@ -5433,20 +4910,8 @@ let urls = [
         "umbraco_id": 28282
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/barnsley-virtual-school/",
-        "umbraco_id": 28283
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/children-in-care-information-just4u/people-who-can-support-you/",
         "umbraco_id": 28312
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/fostering-in-barnsley/",
-        "umbraco_id": 28313
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/safeguarding-families-in-barnsley/safeguarding-children-in-barnsley/",
-        "umbraco_id": 28321
     },
     {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/children-in-care-information-just4u/care-leavers/",
@@ -5459,10 +4924,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/children-in-care-information-just4u/well-prepare-you-for-the-future/",
         "umbraco_id": 28327
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/adoption/",
-        "umbraco_id": 28328
     },
     {
         "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/children-in-care-information-just4u/well-support-you-to-be-healthy/",
@@ -5617,10 +5078,6 @@ let urls = [
         "umbraco_id": 29316
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/libraries/",
-        "umbraco_id": 29317
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/libraries/find-a-library/library-at-priory-campus/",
         "umbraco_id": 29359
     },
@@ -5727,10 +5184,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/statements/02072019-smoking-related-hospital-admissions/",
         "umbraco_id": 29609
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/information-and-privacy/personal-data-breaches/",
-        "umbraco_id": 29629
     },
     {
         "url": "https://www.barnsley.gov.uk/statements/04072019-planning-permission-dispute-at-cawthorne-club/",
@@ -5861,10 +5314,6 @@ let urls = [
         "umbraco_id": 30466
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/sport-and-leisure/active-in-barnsley/",
-        "umbraco_id": 30469
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/jobs/apprenticeships/our-strategy-and-targets/",
         "umbraco_id": 30506
     },
@@ -5951,10 +5400,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/our-council/research-data-and-statistics/joint-strategic-needs-assessment-jsna/jsna-demographics/",
         "umbraco_id": 30593
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/our-council/research-data-and-statistics/barnsley-joint-strategic-needs-assessment/",
-        "umbraco_id": 30594
     },
     {
         "url": "https://www.barnsley.gov.uk/services/our-council/research-data-and-statistics/joint-strategic-needs-assessment-jsna/high-quality-coordinated-care/",
@@ -6053,18 +5498,6 @@ let urls = [
         "umbraco_id": 30915
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/advice-benefits-and-council-tax/send-us-evidence-for-your-council-tax-support-or-housing-benefit-claim/",
-        "umbraco_id": 30917
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/advice-benefits-and-council-tax/send-us-evidence-for-your-council-tax-support-or-housing-benefit-claim/",
-        "umbraco_id": 30923
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/advice-benefits-and-council-tax/housing-benefit/change-your-details-for-housing-benefit/",
-        "umbraco_id": 30924
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/community-and-volunteering/armed-forces/",
         "umbraco_id": 30930
     },
@@ -6137,10 +5570,6 @@ let urls = [
         "umbraco_id": 31068
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/community-safety-and-crime/scams/",
-        "umbraco_id": 31069
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/bins-rubbish-and-recycling/funding-for-environmental-projects/",
         "umbraco_id": 31079
     },
@@ -6159,10 +5588,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/adult-skills-and-community-learning/barnsley-bulletin/careers-advice/",
         "umbraco_id": 31151
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/adult-skills-and-community-learning/barnsley-bulletin/",
-        "umbraco_id": 31153
     },
     {
         "url": "https://www.barnsley.gov.uk/services/adult-skills-and-community-learning/barnsley-bulletin/applying-for-a-job/",
@@ -6505,10 +5930,6 @@ let urls = [
         "umbraco_id": 32490
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/health-and-wellbeing/coronavirus-covid-19/coronavirus-covid-19-advice-and-guidance/",
-        "umbraco_id": 32497
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/drainage-and-flooding/property-flood-resilience-pfr-recovery-support-scheme/",
         "umbraco_id": 32530
     },
@@ -6769,10 +6190,6 @@ let urls = [
         "umbraco_id": 33684
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/children-in-care-and-care-leavers/children-in-care-information-just4u/care4us-council/",
-        "umbraco_id": 33803
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/licensing/temporary-pavement-cafe-licence-due-to-covid-19-coronavirus/",
         "umbraco_id": 33808
     },
@@ -6803,10 +6220,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/our-council/our-strategies/",
         "umbraco_id": 33893
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/advice-benefits-and-council-tax/financial-support-for-households/",
-        "umbraco_id": 33912
     },
     {
         "url": "https://www.barnsley.gov.uk/statements/070820-stottercliffe-cemetery-vandalism/",
@@ -7027,10 +6440,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/statements/23-10-20-hoyland-west-masterplan-and-planned-hermes-site-in-barnsley/",
         "umbraco_id": 34833
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/health-and-wellbeing/coronavirus-covid-19/support-for-businesses-due-to-coronavirus-covid-19/",
-        "umbraco_id": 34846
     },
     {
         "url": "https://www.barnsley.gov.uk/statements/041120-remembrance-day-updated-guidance/",
@@ -7277,10 +6686,6 @@ let urls = [
         "umbraco_id": 35829
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/jobs/early-years-practitioner-roles/",
-        "umbraco_id": 35830
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/community-safety-and-crime/safer-barnsley-partnership/safer-barnsley-partnership-2021/",
         "umbraco_id": 35843
     },
@@ -7337,20 +6742,12 @@ let urls = [
         "umbraco_id": 36027
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/health-and-wellbeing/children-young-people-and-families/healthy-holidays/",
-        "umbraco_id": 36072
-    },
-    {
         "url": "https://www.barnsley.gov.uk/statements/030321-statement-regarding-the-miners-wheel-at-grimethorpe/",
         "umbraco_id": 36088
     },
     {
         "url": "https://www.barnsley.gov.uk/services/community-safety-and-crime/public-space-protection-order-pspo-dog-control/",
         "umbraco_id": 36124
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/public-notices/brook-hill-lane-dunford-bridgewindle-edge-ecklands/",
-        "umbraco_id": 36144
     },
     {
         "url": "https://www.barnsley.gov.uk/public-notices/brook-hill-lane-dunford-bridgewindle-edge-ecklands/",
@@ -7393,10 +6790,6 @@ let urls = [
         "umbraco_id": 36398
     },
     {
-        "url": "https://www.barnsley.gov.uk/statements/01042021-response-to-the-risk-of-asbestos-exposure-in-schools-in-the-barnsley-east-area/",
-        "umbraco_id": 36398
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/housing/self-neglect-and-hoarding/",
         "umbraco_id": 36419
     },
@@ -7423,10 +6816,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/health-and-wellbeing/children-young-people-and-families/healthy-holidays/staying-active-and-things-to-do/",
         "umbraco_id": 36626
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/health-and-wellbeing/children-young-people-and-families/healthy-holidays/",
-        "umbraco_id": 36627
     },
     {
         "url": "https://www.barnsley.gov.uk/services/voting-and-elections/recent-elections/local-government-elections-2021/",
@@ -7481,10 +6870,6 @@ let urls = [
         "umbraco_id": 36965
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/our-council/barnsley-2030/",
-        "umbraco_id": 36967
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/our-council/barnsley-2030/learning-barnsley/",
         "umbraco_id": 36971
     },
@@ -7511,10 +6896,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/statements/27052021-summer-lane-roadworks/",
         "umbraco_id": 37036
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/our-council/barnsley-2030/barnsley-2030-board/",
-        "umbraco_id": 37081
     },
     {
         "url": "https://www.barnsley.gov.uk/services/business-rates/requests-for-information-about-business-rates/foi-extracts-april-2021/",
@@ -7813,10 +7194,6 @@ let urls = [
         "umbraco_id": 37867
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/jobs/reablement-support-worker-roles/",
-        "umbraco_id": 37869
-    },
-    {
         "url": "https://www.barnsley.gov.uk/news/lovetolearn-with-adult-skills-and-community-learning/",
         "umbraco_id": 37874
     },
@@ -7883,10 +7260,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/jobs/social-worker-jobs/about-the-roles/",
         "umbraco_id": 37934
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/jobs/social-worker-jobs/",
-        "umbraco_id": 37935
     },
     {
         "url": "https://www.barnsley.gov.uk/news/first-projects-from-gbp231m-towns-fund-investment-complete/",
@@ -8013,10 +7386,6 @@ let urls = [
         "umbraco_id": 38113
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/our-council/barnsley-2030/",
-        "umbraco_id": 38119
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/parking/electric-vehicle-charging-faqs/",
         "umbraco_id": 38121
     },
@@ -8081,104 +7450,8 @@ let urls = [
         "umbraco_id": 38228
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/adult-social-care/getting-help-early/assistive-living-technology-telecare/",
-        "umbraco_id": 38230
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/adult-social-care/disabilities-and-sensory-impairments/disabled-facilities-grants/",
-        "umbraco_id": 38231
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/animal-welfare-and-licences/licence-to-keep-exotic-animals/",
-        "umbraco_id": 38232
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/animal-welfare-and-licences/licence-to-keep-exotic-animals/",
-        "umbraco_id": 38233
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/animal-welfare-and-licences/licence-to-run-a-business-involving-animals/",
-        "umbraco_id": 38234
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/animal-welfare-and-licences/moving-livestock-licences/",
-        "umbraco_id": 38235
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/road-licences/licences-for-building-materials/",
-        "umbraco_id": 38236
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/licensing/charities-licences/",
-        "umbraco_id": 38237
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/business-information/food-businesses/registering-a-food-business/",
-        "umbraco_id": 38238
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/licensing/gambling-licences/",
-        "umbraco_id": 38239
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/licensing/personal-licences-alcohol/",
-        "umbraco_id": 38240
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/licensing/premises-licences/",
-        "umbraco_id": 38241
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/licensing/temporary-event-notices/",
-        "umbraco_id": 38242
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/parks-and-open-spaces/allotments/",
-        "umbraco_id": 38243
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/road-licences/",
-        "umbraco_id": 38244
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/mot-testing/",
-        "umbraco_id": 38245
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/roadworks-and-road-maintenance/apply-to-close-a-road/",
-        "umbraco_id": 38246
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/public-transport/disabled-persons-travel-pass/",
-        "umbraco_id": 38247
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/school-travel/zero-fare-pass-for-travel-to-school/",
-        "umbraco_id": 38248
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/sport-and-leisure/football/",
-        "umbraco_id": 38249
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/public-transport/older-persons-bus-pass/",
-        "umbraco_id": 38250
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/public-transport/disabled-persons-railcard/",
-        "umbraco_id": 38251
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/public-transport/zoom-under-16-travel-pass/",
-        "umbraco_id": 38252
-    },
-    {
         "url": "https://www.barnsley.gov.uk/news/annual-reports-of-the-barnsley-safeguarding-adults-board-and-safeguarding-children-partnership-202021/",
         "umbraco_id": 38254
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/roads-travel-and-parking/public-transport/zoom-16-18-travel-pass/",
-        "umbraco_id": 38255
     },
     {
         "url": "https://www.barnsley.gov.uk/news/cudworth-covid-19-local-testing-site-to-close-for-one-day/",
@@ -8191,66 +7464,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/news/draft-goldthorpe-masterplan-framework-approved-by-cabinet/",
         "umbraco_id": 38260
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/births-deaths-and-marriages/order-copy-certificates/",
-        "umbraco_id": 38261
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/births-deaths-and-marriages/marriages-and-civil-partnerships/arranging-your-wedding/",
-        "umbraco_id": 38262
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/births-deaths-and-marriages/marriages-and-civil-partnerships/arranging-your-civil-partnership/",
-        "umbraco_id": 38263
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/births-deaths-and-marriages/births/register-a-birth/",
-        "umbraco_id": 38264
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/births-deaths-and-marriages/deaths-and-funerals/register-a-death/",
-        "umbraco_id": 38265
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/births-deaths-and-marriages/marriages-and-civil-partnerships/giving-notice-of-a-marriage-or-civil-partnership/",
-        "umbraco_id": 38266
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/housing/empty-homes/report-a-problem-with-an-empty-home/",
-        "umbraco_id": 38267
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/housing/private-landlords/houses-in-multiple-occupation-hmo/",
-        "umbraco_id": 38272
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/parks-and-open-spaces/report-a-problem-with-a-tree/",
-        "umbraco_id": 38275
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/planning-and-buildings/report-a-breach-of-planning-permission/",
-        "umbraco_id": 38276
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/planning-and-buildings/view-or-comment-on-planning-applications/",
-        "umbraco_id": 38277
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/pollution/report-a-nuisance/report-light-pollution/",
-        "umbraco_id": 38278
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/pollution/air-pollution/report-a-smoke-problem/",
-        "umbraco_id": 38279
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/pollution/air-pollution/report-a-dust-problem/",
-        "umbraco_id": 38280
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/pollution/air-pollution/report-an-odour-problem/",
-        "umbraco_id": 38281
     },
     {
         "url": "https://www.barnsley.gov.uk/news/there-s-something-for-everyone-at-our-sustainable-barnsley-events/",
@@ -8327,10 +7540,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/lieutenancy-of-south-yorkshire/platinum-jubilee/",
         "umbraco_id": 38418
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/community-safety-and-crime/scams/",
-        "umbraco_id": 38421
     },
     {
         "url": "https://www.barnsley.gov.uk/news/barnsley-to-host-exhibition-by-world-famous-artists/",
@@ -8469,10 +7678,6 @@ let urls = [
         "umbraco_id": 38612
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/jobs/proud-to-care-working-in-care-in-barnsley/",
-        "umbraco_id": 38620
-    },
-    {
         "url": "https://www.barnsley.gov.uk/news/this-national-adoption-week-one-adoption-south-yorkshire-champions-the-voices-less-heard/",
         "umbraco_id": 38625
     },
@@ -8507,10 +7712,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/training-and-development/employment-and-skills/",
         "umbraco_id": 38670
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/jobs/advance-barnsley/",
-        "umbraco_id": 38672
     },
     {
         "url": "https://www.barnsley.gov.uk/news/message-from-julia-burrows-barnsley-director-of-public-health-and-mel-john-ross-executive-director-children-s-services-22-october-2021/",
@@ -8595,10 +7796,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/news/barnsley-unites-to-honour-those-that-gave-their-lives-for-our-freedom-we-will-remember-them/",
         "umbraco_id": 38814
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/safeguarding-families-in-barnsley/safeguarding-adults-in-barnsley/",
-        "umbraco_id": 38840
     },
     {
         "url": "https://www.barnsley.gov.uk/services/adult-social-care/getting-help-early/",
@@ -8741,10 +7938,6 @@ let urls = [
         "umbraco_id": 38995
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/licensing/taxi-licences/",
-        "umbraco_id": 39001
-    },
-    {
         "url": "https://www.barnsley.gov.uk/news/leaders-from-across-south-yorkshire-come-together-to-celebrate-safeguarding-awareness-week/",
         "umbraco_id": 39028
     },
@@ -8819,10 +8012,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/news/new-sculpture-goes-on-display-in-the-library-at-the-lightbox/",
         "umbraco_id": 39165
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/news/another-successful-operation-duxford/",
-        "umbraco_id": 39179
     },
     {
         "url": "https://www.barnsley.gov.uk/news/arts-and-craft-workshops-supporting-mental-wellbeing-in-barnsley/",
@@ -8937,7 +8126,7 @@ let urls = [
         "umbraco_id": 39350
     },
     {
-        "url": "https://www.barnsley.gov.uk/public-notices/keresforth-hill-road/",
+        "url": "https://www.barnsley.gov.uk/public-notices/keresforth-hill-road-proposal/",
         "umbraco_id": 39351
     },
     {
@@ -8985,10 +8174,6 @@ let urls = [
         "umbraco_id": 39464
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/fostering-in-barnsley/",
-        "umbraco_id": 39468
-    },
-    {
         "url": "https://www.barnsley.gov.uk/statements/23122021-statement-from-cllr-tim-cheetham-cabinet-spokesperson-for-regeneration-and-culture-regarding-offensive-graffiti-at-penistone-market-barn/",
         "umbraco_id": 39472
     },
@@ -9019,10 +8204,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/markets/trade-at-our-markets/the-cabinet/",
         "umbraco_id": 39511
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/adult-social-care/how-we-can-help-with-your-care-needs/barnsley-pa-finder/",
-        "umbraco_id": 39510
     },
     {
         "url": "https://www.barnsley.gov.uk/news/we-want-your-feedback-on-our-proposed-carers-strategy-priorities/",
@@ -9165,7 +8346,7 @@ let urls = [
         "umbraco_id": 39720
     },
     {
-        "url": "https://www.barnsley.gov.uk/public-notices/sheffield-road-hoyland/",
+        "url": "https://www.barnsley.gov.uk/public-notices/sheffield-road-hoyland-proposal/",
         "umbraco_id": 39722
     },
     {
@@ -9361,10 +8542,6 @@ let urls = [
         "umbraco_id": 39973
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/healthier-futures-barnsley/",
-        "umbraco_id": 39975
-    },
-    {
         "url": "https://www.barnsley.gov.uk/news/celebrating-more-music-programmes-in-our-schools-across-barnsley/",
         "umbraco_id": 39978
     },
@@ -9417,10 +8594,6 @@ let urls = [
         "umbraco_id": 40030
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/jobs/core-services-roles/",
-        "umbraco_id": 40032
-    },
-    {
         "url": "https://www.barnsley.gov.uk/news/gbp17m-secured-to-upgrade-energy-efficiency-of-council-housing-stock/",
         "umbraco_id": 40036
     },
@@ -9471,10 +8644,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/jobs/head-of-service-send-and-inclusion/apply/",
         "umbraco_id": 40085
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/jobs/head-of-service-send-and-inclusion/",
-        "umbraco_id": 40086
     },
     {
         "url": "https://www.barnsley.gov.uk/news/a-new-exhibition-is-rolling-into-the-cooper-gallery/",
@@ -9601,28 +8770,8 @@ let urls = [
         "umbraco_id": 40268
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/our-council/our-performance/annual-accounts/",
-        "umbraco_id": 40269
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/our-council/information-we-publish/senior-officer-salaries/",
-        "umbraco_id": 40270
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/our-council/information-we-publish/social-housing-asset-value/",
-        "umbraco_id": 40271
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/schools-and-learning/school-finance-section-251-budget-and-outturn/",
-        "umbraco_id": 40272
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/our-council/our-budgets-and-finances/procurement/",
         "umbraco_id": 40276
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/our-council/information-we-publish/government-procurement-card-gpc/",
-        "umbraco_id": 40277
     },
     {
         "url": "https://www.barnsley.gov.uk/services/our-council/our-budgets-and-finances/payments/",
@@ -9745,10 +8894,6 @@ let urls = [
         "umbraco_id": 40433
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/jobs/public-health-nursing-service-roles/",
-        "umbraco_id": 40434
-    },
-    {
         "url": "https://www.barnsley.gov.uk/news/young-people-get-involved-have-their-say-and-make-their-mark/",
         "umbraco_id": 40437
     },
@@ -9837,10 +8982,6 @@ let urls = [
         "umbraco_id": 40551
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/advice-benefits-and-council-tax/council-tax/gbp150-council-tax-rebate-from-the-government/",
-        "umbraco_id": 40553
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/jobs/project-manager-regeneration/",
         "umbraco_id": 40556
     },
@@ -9867,10 +9008,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/jobs/project-manager-regeneration/project-manager-role/",
         "umbraco_id": 40573
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/jobs/project-manager-regeneration/",
-        "umbraco_id": 40576
     },
     {
         "url": "https://www.barnsley.gov.uk/news/two-weeks-left-to-register-to-vote-in-upcoming-elections/",
@@ -9995,14 +9132,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/news/barnsley-museums-at-worsbrough-mill-to-receive-gbp180000-in-fund-to-support-community-volunteering-opportunities-through-uk-government-investment/",
         "umbraco_id": 40800
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/adult-social-care/",
-        "umbraco_id": 40814
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/children-families-and-education/childrens-social-care/",
-        "umbraco_id": 40815
     },
     {
         "url": "https://www.barnsley.gov.uk/news/over-94-per-cent-of-barnsley-children-get-their-first-choice-of-primary-school-for-september/",
@@ -10169,10 +9298,6 @@ let urls = [
         "umbraco_id": 41080
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/our-council/situation-in-ukraine/",
-        "umbraco_id": 41086
-    },
-    {
         "url": "https://www.barnsley.gov.uk/services/advice-benefits-and-council-tax/financial-support-for-households/food-support/pocket-friendly-recipes/",
         "umbraco_id": 41091
     },
@@ -10265,10 +9390,6 @@ let urls = [
         "umbraco_id": 41572
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/voting-and-elections/recent-elections/local-government-elections-2022/",
-        "umbraco_id": 41573
-    },
-    {
         "url": "https://www.barnsley.gov.uk/public-notices/town-centre-car-parks/",
         "umbraco_id": 41582
     },
@@ -10319,10 +9440,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/news/year-end-performance-report-highlights-our-positive-progress-in-making-barnsley-the-place-of-possibilities/",
         "umbraco_id": 41647
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/libraries/activities-and-events/events-at-our-libraries/",
-        "umbraco_id": 41649
     },
     {
         "url": "https://www.barnsley.gov.uk/news/school-buildings-investment-recommended-for-approval/",
@@ -10541,10 +9658,6 @@ let urls = [
         "umbraco_id": 41853
     },
     {
-        "url": "https://www.barnsley.gov.uk/services/adult-skills-and-community-learning/",
-        "umbraco_id": 41859
-    },
-    {
         "url": "https://www.barnsley.gov.uk/public-notices/laithes-close-athersley-south/",
         "umbraco_id": 41862
     },
@@ -10575,10 +9688,6 @@ let urls = [
     {
         "url": "https://www.barnsley.gov.uk/services/jobs/head-of-economic-development/apply/",
         "umbraco_id": 41875
-    },
-    {
-        "url": "https://www.barnsley.gov.uk/services/jobs/head-of-economic-development/",
-        "umbraco_id": 41876
     },
     {
         "url": "https://www.barnsley.gov.uk/news/barnsley-archives-and-local-studies-nominated-for-an-archives-and-records-association-excellence-award/",
@@ -10661,38 +9770,17 @@ let urls = [
         "umbraco_id": 41953
     }
 ]
-
-let found = true
-let id = ""
-for (i=0; i<urls.length; i++) {
-    if (window.location.href == urls[i].url) {
-        console.log(`Current url: ${window.location.href}`)
-        console.log(`umbraco url: ${urls[i].url}`)
-        console.log(`umbraco id: ${urls[i].umbraco_id}`)
-        // console.log(urls[i].umbraco_id)
-        id = urls[i].umbraco_id
-        found = true
-        break
-    } else {
-        id = 1050
-        found = false
+let counter = 0
+for (i = 0; i < urls.length; i++) {
+    // console.log("--------------------------------")
+    for (j = 0; j < urls.length; j++) {
+        if (urls[i].url == urls[j].url) {
+            if (i != j) {
+                console.log(urls[i].url)
+                console.log(urls[i].umbraco_id)
+                counter = counter + 1
+            }
+        }
     }
 }
-
-let umbraco_button = document.createElement("a")
-umbraco_button.textContent = "umbraco"
-umbraco_button.setAttribute("href", `https://barnsleygovuk.azurewebsites.net/umbraco#/content/content/edit/${id}`)
-// umbraco_button.setAttribute("src", "www.google.com")
-// umbraco_button.style.color = "white"
-umbraco_button.style.margin = "4px"
-umbraco_button.style.textDecoration = "none"
-console.log(window.location.href)
-
-if (found = false) {
-    umbraco_button.style.color = "red"
-} else {
-    umbraco_button.style.color = "white"
-}
-
-
-document.querySelector("div.masthead").appendChild(umbraco_button)
+console.log(counter)
